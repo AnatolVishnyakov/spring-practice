@@ -10,6 +10,7 @@ class WithdrawalController {
     ResponseEntity withdrawalsForCard(@PathVariable String cardNo) {
         //.. stack for query
         // - direct call to DB to Withdrawals
+        return ResponseEntity.ok("");
     }
 
     @PostMapping("/{cardNo}")
@@ -17,6 +18,7 @@ class WithdrawalController {
         //.. stack for commands
         // - call to CreditCard.withdraw(r.amount)
         // - insert new Withdrawal to DB
+        return ResponseEntity.ok("1");
     }
 
 }

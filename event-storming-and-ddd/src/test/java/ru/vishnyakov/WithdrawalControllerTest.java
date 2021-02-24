@@ -30,7 +30,7 @@ class WithdrawalControllerTest {
                 "/withdrawals/" + ANY_CARD_NO,
                 WithdrawRequest.class);
         assertThat(res.getStatusCode().is2xxSuccessful()).isTrue();
-        assertThat(res.getBody()).hasSize(1);
+        assertThat(res.getBody()).hasToString("1");
     }
 
 }

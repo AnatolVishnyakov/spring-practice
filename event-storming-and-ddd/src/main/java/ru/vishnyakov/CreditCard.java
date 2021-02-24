@@ -16,6 +16,10 @@ public class CreditCard {
         //...
     }
 
+    private boolean limitAlreadyAssigned() {
+        return false;
+    }
+
     void withdraw(BigDecimal money) {
         if(limitNotAssigned()) {
             // throw
@@ -28,6 +32,18 @@ public class CreditCard {
         }
 
         //...
+    }
+
+    private boolean withdrawalWithinLastHour() {
+        return false;
+    }
+
+    private boolean notEnoughMoney() {
+        return false;
+    }
+
+    private boolean limitNotAssigned() {
+        return false;
     }
 
     void repay(BigDecimal money) {

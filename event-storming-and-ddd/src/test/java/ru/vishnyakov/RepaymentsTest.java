@@ -5,6 +5,10 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.cloud.stream.messaging.Source;
+import org.springframework.messaging.Message;
+
+import java.util.concurrent.BlockingQueue;
 
 import static java.math.BigDecimal.TEN;
 import static org.assertj.core.api.Assertions.assertThat;

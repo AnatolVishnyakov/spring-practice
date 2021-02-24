@@ -1,6 +1,13 @@
 package ru.vishnyakov;
 
+import org.springframework.cloud.stream.messaging.Source;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.math.BigDecimal;
 
 @RestController("/repayments")
 class RepaymentController {
@@ -16,8 +23,8 @@ class RepaymentController {
         //.. stack for commands
         // - call to CreditCard.repay(r)
         // - source.output().send(... new MoneyRepaid(...));
+        return ResponseEntity.ok("");
     }
-
 }
 
 class RepaymentRequest {
