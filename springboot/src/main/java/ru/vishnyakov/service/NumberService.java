@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 public class NumberService {
     private static final Logger logger = LoggerFactory.getLogger(NumberService.class);
 
-    @Cacheable(value = "squareCache", key = "#number", condition = "#number > 10")
+    @Cacheable(value = "number", key = "#number")
     public BigDecimal square(Long number) {
         BigDecimal square = BigDecimal.valueOf(number)
                 .multiply(BigDecimal.valueOf(number));
