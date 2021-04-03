@@ -19,8 +19,8 @@
     </properties>
 
     <modules>
-        <module>domain-driven-design-example</module>
-        <module>event-storming-and-ddd</module>
+<!--        <module>domain-driven-design-example</module>-->
+<!--        <module>event-storming-and-ddd</module>-->
         <module>ddd-library</module>
     </modules>
 </project>
