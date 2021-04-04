@@ -18,7 +18,8 @@
     <modules>
         <module>ddd</module>
         <module>devops</module>
-        <module>springboot</module>
+        <module>springbootcache</module>
+        <module>spring-boot</module>
     </modules>
 
 </project>
