@@ -20,6 +20,7 @@
         <module>devops</module>
         <module>springbootcache</module>
         <module>spring-boot</module>
+        <module>custom-log</module>
     </modules>
 
 </project>
